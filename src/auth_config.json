@@ -1,4 +1,5 @@
 {
   "domain": "dev-bd5b69sr.auth0.com",
-  "clientId": "EPFJpHAqcmOtDamJ4lLxOKhpHwbGHlVr"
+  "clientId": "EPFJpHAqcmOtDamJ4lLxOKhpHwbGHlVr",
+  "audience": "http://localhost:3000/api"
 }
