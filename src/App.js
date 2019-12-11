@@ -6,7 +6,7 @@ import { useAuth0 } from "./react-auth0-spa";
 import history from "./utils/history";
 import PrivateRoute from "./components/PrivateRoute";
 import Dashboard from "./components/Dashboard";
-import ExternalApi from "./components/ApiCall"
+import ExternalApi from "./components/ExternalApi"
 
 function App() {
   const { loading } = useAuth0();
