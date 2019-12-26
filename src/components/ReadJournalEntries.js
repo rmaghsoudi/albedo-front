@@ -10,10 +10,10 @@ const ReadJournalEntries = () => {
 
   const getEntries = (e) => {
     e.preventDefault();
-    callApi(user.sub);
+    getUserEntries(user.sub);
   }
 
-  const callApi = async (auth0Id) => {
+  const getUserEntries = async (auth0Id) => {
     try {
       const token = await getTokenSilently();
 

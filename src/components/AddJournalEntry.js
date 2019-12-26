@@ -9,14 +9,13 @@ const AddJournalEntry = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    console.log(user)
-    callApi({
+    addEntry({
       content: e.target.content.value,
       auth0Id: user.sub
     });
   }
 
-  const callApi = async (formData) => {
+  const addEntry = async (formData) => {
     try {
       const token = await getTokenSilently();
 
