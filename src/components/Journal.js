@@ -1,6 +1,7 @@
 import React from "react";
 import JournalEntry from "./JournalEntry";
 import AddJournalEntry from "./AddJournalEntry";
+import ReadJournalEntries from "./ReadJournalEntries";
 
 const dummyData = {
   createdDate: Date.now,
@@ -14,6 +15,7 @@ const Journal = () => {
       I'm the Journal Page
       <JournalEntry entry={dummyData}></JournalEntry>
       <AddJournalEntry></AddJournalEntry>
+      <ReadJournalEntries></ReadJournalEntries>
     </div>
   )
 
