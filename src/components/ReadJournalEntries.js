@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import JournalEntry from "./JournalEntry";
 import { useAuth0 } from "../react-auth0-spa";
 
 const ReadJournalEntries = () => {
@@ -38,7 +39,13 @@ const ReadJournalEntries = () => {
     <div>
       <button onClick={getEntries} >Show my entries</button>
       <h1>Your Journal Entries</h1>
-      {showResult && <code>{JSON.stringify(apiMessage, null, 2)}</code>}
+      {showResult && apiMessage ?
+        <div>{apiMessage.map(entry => {
+          return(
+            <JournalEntry entry={entry} key={entry._id} />
+          )
+        })}</div> : null
+      }
     </div>
   )
 
