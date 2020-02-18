@@ -20,6 +20,7 @@ const NavBar = () => {
         <Link to="/external-api">API Call</Link>
         <Link to="/journal">Journal</Link>
         <Link to="/test">Test</Link>
+        <Link to="/exercise">Exercises</Link>
       </span>
     )}
     </div>
