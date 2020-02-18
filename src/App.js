@@ -8,6 +8,7 @@ import PrivateRoute from "./components/PrivateRoute";
 import Dashboard from "./components/Dashboard";
 import ExternalApi from "./components/ExternalApi"
 import Journal from "./components/Journal";
+import Test from "./components/Test"
 
 function App() {
   const { loading } = useAuth0();
@@ -27,6 +28,7 @@ function App() {
           <PrivateRoute path="/profile" component={Dashboard} />
           <PrivateRoute path="/external-api" component={ExternalApi} />
           <PrivateRoute path="/journal" component={Journal} />
+          <Route path="/test" component={Test} />
         </Switch>
       </Router>
     </div>
