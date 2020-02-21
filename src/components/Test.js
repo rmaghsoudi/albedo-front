@@ -1,4 +1,4 @@
-import React, { useState, useReducer } from "react";
+import React, { useState } from "react";
 import { useAuth0 } from "../react-auth0-spa";
 
 const questions = [
